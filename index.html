@@ -8,47 +8,52 @@
 
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="main-header-logo" alt="Логотип городка Седона." src="#">
+          <img class="main-header-logo" width="140" height="70" src="images/header/sedona-logo.svg"
+            alt="Логотип городка Седона.">
         </a>
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item">
-            <a class="main-navigation-link">Главная</a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="main-navigation-link" href="#">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="main-navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="main-navigation-user">
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
+        <ul class="navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <img class="navigation-search-icon" width="20" height="20" src="images/header/search-icon.svg"
+                alt="Иконка поиска."></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <img class="navigation-like-icon" width="18" height="17" src="images/header/like-icon.svg"
+                alt="Иконка лайка."></a>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="main-navigation-link" href="#">
-              <span class="visually-hidden">
-                Лайки
-              </span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="main-navigation-button button" href="#">Хочу сюда!</a>
+            <a class="navigation-button button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-index">
-      <img class="main-greeting-logo" alt="Надпись 'Добро пожаловать'." src="#">
-      <img class="main-description-logo" alt="Надпись 'Великолепный'." src="#">
+    <main class="hero">
       <h1 class="visually-hidden">Туристический городок Седона</h1>
-      <img class="main-logo" alt="Логотип городка Седона." src="#">
+      <img class="hero-greeting-text" alt="Приветственная надпись 'Добро пожаловать'." width="187.7" height="44.7"
+        src="images/hero/welcome.svg">
+      <img class="hero-greeting-text" alt="Приветственная надпись 'в великолепную'." width="256" height="28.78"
+        src="images/hero/to.svg">
+      <img class="hero-greeting-text" alt="Приветственная надпись 'Седону, потому что Гранд-Каньон сосет'."
+        width="456.7" height="212.77" src="images/hero/sedona.svg">
+      <img class="hero-background" alt="Фоновая картинка с горами и видом." width="1200" height="485"
+        src="images/hero/hero-background.jpg">
+      <img class="hero-dekor-image" alt="Вспомогательный декоративный элемент" width="1200" height="57"
+        src="images/hero/dekor.svg">
 
       <section class="description">
         <h2 class="visually hidden">Краткое описание</h2>
@@ -60,7 +65,8 @@
             <p class="description-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li class="description-item-picture">
-            <img class="town-picture" alt="Изображение городка." src="#">
+            <img class="town-picture" alt="Изображение городка." width="800" height="400"
+              src="images/description/town-photo.jpg">
           </li>
           <li class="description-item">
             <h3 class="description-heading">Небольшая площадь</h3>
@@ -75,7 +81,8 @@
             <p class="description-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="description-item-picture">
-            <img class="town-picture" alt="Изображение Моста дьявола." src="#">
+            <img class="town-picture" alt="Изображение Моста дьявола." width="800" height="385"
+              src="images/description/devils-bridge.jpg">
           </li>
           <li class="description-item">
             <h3 class="description-heading">Там есть Мост дьявола</h3>
@@ -85,22 +92,25 @@
       </section>
 
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущетсва</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <p class="advantages-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="advantages-text">Опытный персонал и качественное обслуживание!</p>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <img class="advantages-item-icon" alt="Иконка дома" src="#">
+            <img class="advantages-item-icon" alt="Иконка дома" width="75" height="72"
+              src="images/advantages/house.svg">
             <h3 class="advantages-heading">Жильё</h3>
             <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advantages-item">
-            <img class="advantages-item-icon" alt="Иконка бургера" src="#">
+            <img class="advantages-item-icon" alt="Иконка бургера" width="74" height="70"
+              src="images/advantages/burger.svg">
             <h3 class="advantages-heading">Еда</h3>
             <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages-item">
-            <img class="advantages-item-icon" alt="Иконка подарка" src="#">
+            <img class="advantages-item-icon" alt="Иконка подарка" width="64" height="76"
+              src="images/advantages/gift.svg">
             <h3 class="advantages-heading">Сувениры</h3>
             <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -112,20 +122,24 @@
           Седоне</p>
         <a class="appointment-button button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
-    </main>
-    <footer class="main-footer">
-      <section class="newslettering">
-        <h2 class="newslettering-title">Подпишитесь на рассылку</h2>
-        <p class="newslettering-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newslettering-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newslettering-email"></label>
+
+      <section class="subscription">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <img class="subscription-background" alt="Размытое изображение гор." width="1200" height="414.86"
+          src="images/subscribe-background.jpg">
+        <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="subscription-email"></label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newslettering-email" id="newslettering-email"
             required>
-          <button class="newslettering-button button" type="submit">
+          <button class="subscription-button button" type="submit">
             Подписаться
           </button>
         </form>
       </section>
+    </main>
+
+    <footer class="main-footer">
       <section class="socials">
         <h2 class="socials-title">
           <span class="visually-hidden">Социальные медиа</span>
@@ -133,17 +147,17 @@
         <ul class="socials-site-list">
           <li class="socials-site-item">
             <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Вконтакте</span>
+              <img class="socials-icon" alt="Вконтакте" width="24" height="14" src="images/socials/vk-icon.svg">
             </a>
           </li>
           <li class="socials-site-item">
             <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм</span>
+              <img class="socials-icon" alt="Телеграм" width="18" height="15.1" src="images/socials/telegram-icon.svg">
             </a>
           </li>
           <li class="socials-site-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб</span>
+              <img class="socials-icon" alt="Ютуб" width="22" height="17" src="images/socials/youtube-icon.svg">
             </a>
           </li>
         </ul>
@@ -155,7 +169,8 @@
         <ul class="socials-sorce-list">
           <li class="socials-sorce-item">
             <a class="button" href="https://htmlacademy.ru/">
-              <span class="visually-hidden">HTML Academy</span>
+              <img class="socials-sorce-icon" alt="HTML Academy" width="114.9" height="32.9"
+                src="images/socials/html-academy-logo.svg">
             </a>
           </li>
         </ul>
