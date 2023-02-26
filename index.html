@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -42,41 +43,38 @@
         </ul>
       </nav>
     </header>
-    <main class="hero">
-      <h1 class="visually-hidden">Туристический городок Седона</h1>
-      <img class="hero-greeting-text" alt="Приветственная надпись 'Добро пожаловать'." width="187.7" height="44.7"
-        src="images/hero/welcome.svg">
-      <img class="hero-greeting-text" alt="Приветственная надпись 'в великолепную'." width="256" height="28.78"
-        src="images/hero/to.svg">
-      <img class="hero-greeting-text" alt="Приветственная надпись 'Седону, потому что Гранд-Каньон сосет'."
-        width="456.7" height="212.77" src="images/hero/sedona.svg">
-      <img class="hero-background" alt="Фоновая картинка с горами и видом." width="1200" height="485"
-        src="images/hero/hero-background.jpg">
-      <img class="hero-dekor-image" alt="Вспомогательный декоративный элемент" width="1200" height="57"
-        src="images/hero/dekor.svg">
+    <main class="main-index">
+      <section class="hero">
+        <h1 class="visually-hidden">Туристический городок Седона</h1>
+        <img class="hero-greeting-text"
+          alt="Приветственная надпись 'Добро пожаловать в великолепную Седону, потому что Гранд-Каньон сосет'."
+          width="458" height="352" src="images/hero/welcome.svg">
+        <img class="hero-dekor-image" alt="Вспомогательный декоративный элемент" width="1200" height="57"
+          src="images/hero/dekor.svg">
+      </section>
 
       <section class="description">
         <h2 class="visually hidden">Краткое описание</h2>
         <p class="description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="description-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul>
-          <li class="description-item">
+          <li class="description-item blue">
             <h3 class="description-heading">Настоящий городок</h3>
-            <p class="description-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="description-description blue">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li class="description-item-picture">
             <img class="town-picture" alt="Изображение городка." width="800" height="400"
               src="images/description/town-photo.jpg">
           </li>
-          <li class="description-item">
+          <li class="description-item rather-white">
             <h3 class="description-heading">Небольшая площадь</h3>
             <p class="description-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="description-item">
+          <li class="description-item light-blue">
             <h3 class="description-heading">Красивая дорога</h3>
             <p class="description-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="description-item">
+          <li class="description-item rather-white">
             <h3 class="description-heading">Мало туристов</h3>
             <p class="description-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
@@ -84,9 +82,9 @@
             <img class="town-picture" alt="Изображение Моста дьявола." width="800" height="385"
               src="images/description/devils-bridge.jpg">
           </li>
-          <li class="description-item">
+          <li class="description-item blue">
             <h3 class="description-heading">Там есть Мост дьявола</h3>
-            <p class="description-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <p class="description-description blue">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
       </section>
@@ -96,7 +94,7 @@
         <p class="advantages-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="advantages-text">Опытный персонал и качественное обслуживание!</p>
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item rather-white">
             <img class="advantages-item-icon" alt="Иконка дома" width="75" height="72"
               src="images/advantages/house.svg">
             <h3 class="advantages-heading">Жильё</h3>
@@ -108,7 +106,7 @@
             <h3 class="advantages-heading">Еда</h3>
             <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item rather-white">
             <img class="advantages-item-icon" alt="Иконка подарка" width="64" height="76"
               src="images/advantages/gift.svg">
             <h3 class="advantages-heading">Сувениры</h3>
@@ -125,8 +123,6 @@
 
       <section class="subscription">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <img class="subscription-background" alt="Размытое изображение гор." width="1200" height="414.86"
-          src="images/subscribe-background.jpg">
         <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscription-email"></label>
