@@ -75,7 +75,9 @@ body {
 
 .description-text,
 .advantages-text,
-.appointment-text {
+.appointment-text,
+.description-description,
+.advantages-description {
   color: #333333;
 }
 
