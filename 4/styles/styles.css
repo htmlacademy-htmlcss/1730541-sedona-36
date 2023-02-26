@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background: #ffffff;
+
+}
+
+.main-index {
+  text-align: center;
+}
+
+.navigation-link {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000;
+  background-color: #ffffff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.navigation-button {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.hero {
+  background-color: #ffffff;
+  color: #000;
+  background-image: url("../images/hero/hero-background.jpg");
+  background-size: 1200px 485px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.description-title,
+.advantages-title,
+.appointment-title,
+.subscription-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.description-text,
+.advantages-text,
+.appointment-text,
+.description-description,
+.advantages-description {
+  color: #333333;
+}
+
+.description-heading,
+.advantages-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.description-description,
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.blue {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.light-blue {
+  background-color: rgb(131, 179, 211, 20%);
+}
+
+.rather-white {
+  background-color: rgb(131, 179, 211, 12%);
+  ;
+}
+
+.appointment-button {
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.subscription {
+  height: 414.86px;
+  color: #ffffff;
+  background-image: url(../images/subscribe-background.jpg);
+  background-color: #82B3D3;
+  background-size: 1200px 485px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.field {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.subscription-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.socials-phone-list {
+  text-align: center;
+}
+
+.socials-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.socials-sorce-list {
+  text-align: right;
+}
