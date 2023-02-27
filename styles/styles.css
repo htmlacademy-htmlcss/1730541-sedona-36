@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/pt-sans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -31,8 +31,6 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans";
-  font-style: normal;
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
@@ -43,8 +41,6 @@ body {
 }
 
 .navigation-button {
-  font-family: "PT Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -55,12 +51,28 @@ body {
 }
 
 .hero {
+  position: relative;
   background-color: #ffffff;
   color: #000;
   background-image: url("../images/hero/hero-background.jpg");
   background-size: 1200px 485px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1200px;
+  height: 57px;
+  background-image: url(../images/hero/dekor.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
 }
 
 .description-title,
@@ -158,4 +170,17 @@ body {
 
 .socials-sorce-list {
   text-align: right;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
