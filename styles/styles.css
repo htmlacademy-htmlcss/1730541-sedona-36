@@ -35,12 +35,44 @@ body {
 
 }
 
+/*Работа с MAIN*/
 .main-index {
   text-align: center;
 }
 
 .main-container {
   flex-grow: 1;
+}
+
+/*Навигационные штучки*/
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list,
+.navigation-user,
+.navigation-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-logo {
+  width: 140px;
+  margin-left: 70px;
+  margin-right: 28px;
+}
+
+.navigation-list {
+  width: 452px;
+  list-style-type: none;
+}
+
+.navigation-user {
+  width: 338px;
+  margin-left: auto;
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -61,6 +93,13 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
+}
+
+/*Основное содержимое сайта*/
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .hero {
@@ -88,6 +127,11 @@ body {
   margin: 0 auto;
 }
 
+.hero-greeting-text {
+  display: block;
+  margin: 0 auto;
+}
+
 .description-title,
 .advantages-title,
 .appointment-title,
@@ -98,6 +142,58 @@ body {
   text-transform: uppercase;
 }
 
+.description-item-list,
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.description-item,
+.advantages-item {
+  max-width: 400px;
+  list-style-type: none;
+}
+
+.description-item-picture {
+  max-width: 800px;
+  list-style-type: none;
+}
+
+.description-title,
+.advantages-title {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0;
+}
+
+.description-title {
+  width: 650px;
+}
+
+.advantages-title {
+  width: 505px;
+}
+
+.description-text {
+  width: 651px;
+}
+
+.advantages-text {
+  width: 490px;
+}
+
+.description-text,
+.advantages-text {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+}
+
 .description-text,
 .advantages-text,
 .appointment-text,
@@ -105,6 +201,7 @@ body {
 .advantages-description {
   color: #333333;
 }
+
 
 .description-heading,
 .advantages-heading {
@@ -134,15 +231,42 @@ body {
   ;
 }
 
+/*Встреча*/
+.appointment {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+}
+
+.appointment-text {
+  width: 592px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
 .appointment-button {
+  margin: 0 auto;
+  width: 376px;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
   color: #ffffff;
   background-color: #756157;
+  align-items: center;
 }
 
+/*Подписочная*/
 .subscription {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
   height: 414.86px;
   color: #ffffff;
   background-image: url(../images/subscribe-background.jpg);
@@ -150,6 +274,16 @@ body {
   background-size: 1200px 485px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.subscription-title {
+  width: 404px;
+  margin: 0 auto;
+}
+
+.subscription-text {
+  width: 475px;
+  margin: 0 auto;
 }
 
 .field {
@@ -160,17 +294,55 @@ body {
   line-height: 24px;
 }
 
+
 .subscription-button {
+  padding: 0;
+  width: 232px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
   color: #ffffff;
   text-transform: uppercase;
+  border-radius: 0 4px 4px 0;
+}
+
+.subscription-field {
+  width: 452px;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px 0 0 4px;
+  flex-grow: 1;
+}
+
+/*Элементы подвальчика*/
+
+.socials {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.socials-site-list,
+.socials-phone-list,
+.socials-sorce-list {
+  margin: 0;
+  padding: 0;
+}
+
+.socials-site-list {
+  width: 192;
+  justify-content: space-between;
+  margin-left: 70px;
+  list-style-type: none;
 }
 
 .socials-phone-list {
+  width: 331;
+  margin: 0 auto;
   text-align: center;
+  list-style-type: none;
 }
 
 .socials-phone {
@@ -182,7 +354,10 @@ body {
 }
 
 .socials-sorce-list {
-  text-align: right;
+  width: 185px;
+  text-align: left;
+  margin-left: auto;
+  list-style-type: none;
 }
 
 .visually-hidden {
