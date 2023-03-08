@@ -1,9 +1,8 @@
-/*Подключение шрифтов*/
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -21,10 +20,6 @@ html {
 
 /*BODY*/
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -32,7 +27,10 @@ body {
   line-height: 26px;
   color: #000000;
   background: #ffffff;
-
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 /*Работа с MAIN*/
@@ -153,45 +151,46 @@ body {
 
 .description-item,
 .advantages-item {
-  max-width: 400px;
+  width: 400px;
   list-style-type: none;
 }
 
 .description-item-picture {
-  max-width: 800px;
+  width: 800px;
   list-style-type: none;
+  vertical-align: middle;
 }
 
-.description-title,
-.advantages-title {
+.town-picture {
+  vertical-align: middle;
+}
+
+.description-container {
   display: flex;
-  margin: 0 auto;
-  justify-content: center;
+  flex-direction: column;
+  margin: 0;
   padding: 0;
+  justify-content: center;
 }
 
 .description-title {
+  margin: auto;
   width: 650px;
 }
 
 .advantages-title {
+  margin: auto;
   width: 505px;
 }
 
 .description-text {
+  margin: auto;
   width: 651px;
 }
 
 .advantages-text {
+  margin: auto;
   width: 490px;
-}
-
-.description-text,
-.advantages-text {
-  display: flex;
-  margin: 0 auto;
-  padding: 0;
-  justify-content: center;
 }
 
 .description-text,
@@ -235,15 +234,14 @@ body {
 .appointment {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   padding: 0;
   justify-content: center;
 }
 
 .appointment-text {
   width: 592px;
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
 }
 
 
@@ -332,15 +330,16 @@ body {
 }
 
 .socials-site-list {
-  width: 192;
+  width: 142px;
   justify-content: space-between;
   margin-left: 70px;
   list-style-type: none;
 }
 
 .socials-phone-list {
-  width: 331;
-  margin: 0 auto;
+  justify-content: center;
+  width: 720px;
+  margin: auto;
   text-align: center;
   list-style-type: none;
 }
@@ -356,7 +355,7 @@ body {
 .socials-sorce-list {
   width: 185px;
   text-align: left;
-  margin-left: auto;
+  margin: auto;
   list-style-type: none;
 }
 
