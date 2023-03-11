@@ -26,7 +26,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background: #ffffff;
+  background: #F2F2F2;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -47,6 +47,7 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  background: #ffffff;
 }
 
 .navigation-list,
@@ -57,23 +58,34 @@ body {
 }
 
 .navigation-logo {
+  display: block;
   width: 140px;
   margin-left: 70px;
   margin-right: 28px;
+  z-index: 1;
+  margin-bottom: -6px;
 }
 
+
+
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 452px;
   list-style-type: none;
 }
 
 .navigation-user {
+  display: flex;
+  flex-wrap: wrap;
   width: 338px;
   margin-left: auto;
   list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
@@ -83,7 +95,17 @@ body {
   text-decoration: none;
 }
 
+.navigation-user-link {
+  display: block;
+  padding: 22px 13px;
+}
+
 .navigation-button {
+  display: block;
+  padding: 8px 34px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-left: 20px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -91,11 +113,14 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 /*Основное содержимое сайта*/
 
 .page-container {
+  background: #ffffff;
   width: 1200px;
   margin: 0 auto;
 }
@@ -110,6 +135,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.hero-greeting-text {
+  padding-top: 51.4px;
+  padding-bottom: 82.23px;
+  display: block;
+  margin: 0 auto;
+}
+
+
 .hero::after {
   content: "";
   position: absolute;
@@ -122,11 +155,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 0 auto;
-}
-
-.hero-greeting-text {
-  display: block;
   margin: 0 auto;
 }
 
@@ -165,7 +193,8 @@ body {
   vertical-align: middle;
 }
 
-.description-container {
+.description-container,
+.advantages-container {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -173,8 +202,14 @@ body {
   justify-content: center;
 }
 
+.description-container {
+  padding-top: 69px;
+  padding-bottom: 69px;
+  margin-bottom: 21px;
+}
+
 .description-title {
-  margin: auto;
+  margin: 0 auto 25px;
   width: 650px;
 }
 
@@ -204,6 +239,7 @@ body {
 
 .description-heading,
 .advantages-heading {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -212,6 +248,7 @@ body {
 
 .description-description,
 .advantages-description {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
 }
@@ -230,12 +267,25 @@ body {
   ;
 }
 
+.advantages-container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+
 /*Встреча*/
 .appointment {
   display: flex;
   flex-direction: column;
   padding: 0;
+  padding-top: 69px;
+  padding-bottom: 96px;
   justify-content: center;
+}
+
+.appointment-title {
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .appointment-text {
@@ -247,7 +297,9 @@ body {
 
 .appointment-button {
   margin: 0 auto;
-  width: 376px;
+  margin-top: 54px;
+  padding: 8px 50px;
+  width: 276px;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
@@ -264,8 +316,9 @@ body {
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
+  padding-top: 96px;
+  padding-bottom: 104px;
   justify-content: center;
-  height: 414.86px;
   color: #ffffff;
   background-image: url(../images/subscribe-background.jpg);
   background-color: #82B3D3;
@@ -277,11 +330,13 @@ body {
 .subscription-title {
   width: 404px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .subscription-text {
   width: 475px;
   margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .field {
@@ -315,11 +370,15 @@ body {
 
 /*Элементы подвальчика*/
 
-.socials {
+.main-footer {
+  background: #ffffff;
   display: flex;
   width: 1200px;
   margin: 0 auto;
+}
 
+.socials {
+  display: flex;
 }
 
 .socials-site-list,
@@ -330,13 +389,23 @@ body {
 }
 
 .socials-site-list {
-  width: 142px;
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  width: 184px;
   margin-left: 70px;
   list-style-type: none;
 }
 
+.socials-site-item {
+  width: 47.33px;
+  height: 40px;
+}
+
 .socials-phone-list {
+  padding-top: 45px;
+  padding-bottom: 35px;
   justify-content: center;
   width: 720px;
   margin: auto;
@@ -353,9 +422,12 @@ body {
 }
 
 .socials-sorce-list {
-  width: 185px;
+  width: 156px;
+  padding-top: 48.5px;
+  padding-bottom: 36.8px;
   text-align: left;
-  margin: auto;
+  margin: 0 auto;
+  margin-right: 70px;
   list-style-type: none;
 }
 
