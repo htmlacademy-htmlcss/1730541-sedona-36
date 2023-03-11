@@ -98,6 +98,8 @@ body {
 .navigation-user-link {
   display: block;
   padding: 22px 13px;
+  min-width: 18px;
+  min-height: 17px;
 }
 
 .navigation-button {
