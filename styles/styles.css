@@ -63,7 +63,12 @@ body {
   margin-left: 70px;
   margin-right: 28px;
   z-index: 1;
+  position: relative;
   margin-bottom: -6px;
+}
+
+.main-header-logo {
+  display: block;
 }
 
 
