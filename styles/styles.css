@@ -33,6 +33,10 @@ body {
   min-height: 100%;
 }
 
+.button {
+  cursor: pointer;
+}
+
 /*Работа с MAIN*/
 .main-index {
   text-align: center;
@@ -102,13 +106,23 @@ body {
 
 .navigation-user-link {
   display: block;
-  padding: 22px 13px;
-  min-width: 18px;
-  min-height: 17px;
+  position: relative;
+  padding: 22px 12px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .navigation-button {
-  display: block;
+  display: inline-block;
   padding: 8px 34px;
   margin-top: 14px;
   margin-bottom: 14px;
@@ -186,10 +200,13 @@ body {
 
 .description-item,
 .advantages-item {
+  display: flex;
   width: 230px;
-  padding: 90px 85px;
-  min-height: 200px;
+  min-height: 385px;
   list-style-type: none;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 85px;
 }
 
 .description-item-picture {
@@ -253,6 +270,29 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.description-item .description-heading::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 85px;
+}
+
+.description-item:nth-child(1) .description-heading::after,
+.description-item:nth-child(7) .description-heading::after {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.description-item:nth-child(3) .description-heading::after,
+.description-item:nth-child(4) .description-heading::after,
+.description-item:nth-child(5) .description-heading::after {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .description-description,
@@ -260,6 +300,10 @@ body {
   margin: 0;
   font-size: 18px;
   line-height: 21px;
+}
+
+.description-description {
+  padding-top: 30px;
 }
 
 .blue {
@@ -275,6 +319,32 @@ body {
   background-color: rgb(131, 179, 211, 12%);
   ;
 }
+
+.advantages-item::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.advantages-item:nth-child(1)::before {
+  background-image: url("../images/advantages/house.svg");
+}
+
+.advantages-item:nth-child(2)::before {
+  background-image: url("../images/advantages/burger.svg");
+}
+
+.advantages-item:nth-child(3)::before {
+  background-image: url("../images/advantages/gift.svg");
+}
+
 
 .advantages-container {
   padding-top: 64px;
@@ -305,6 +375,7 @@ body {
 
 
 .appointment-button {
+  display: inline-block;
   margin: 0 auto;
   margin-top: 54px;
   padding: 8px 50px;
@@ -317,6 +388,7 @@ body {
   color: #ffffff;
   background-color: #756157;
   align-items: center;
+  border-radius: 4px;
 }
 
 /*Подписочная*/
@@ -358,6 +430,7 @@ body {
 }
 
 .subscription-button {
+  display: inline-block;
   padding: 8px 50px;
   width: 232px;
   font-weight: 700;
