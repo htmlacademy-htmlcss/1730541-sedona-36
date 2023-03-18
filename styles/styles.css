@@ -148,7 +148,7 @@ body {
 
 .hero {
   position: relative;
-  background-color: #ffffff;
+  background-color: #345;
   color: #000;
   background-image: url("../images/hero/hero-background.jpg");
   background-size: 1200px 485px;
@@ -421,7 +421,7 @@ body {
 }
 
 .field {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
 }
 
 .subscription-form {
@@ -459,9 +459,13 @@ body {
 
 .main-footer {
   background: #ffffff;
+  padding: 40px 70px 30px 70px;
   display: flex;
-  width: 1200px;
+  min-width: 1060px;
   margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .socials {
@@ -476,23 +480,29 @@ body {
 }
 
 .socials-site-list {
+  margin: 0;
+  padding: 0;
+  width: 195px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 45px;
-  padding-bottom: 35px;
-  width: 184px;
-  margin-left: 70px;
   list-style-type: none;
 }
 
 .socials-site-item {
-  width: 47.33px;
-  height: 40px;
+  display: block;
+  padding: 15px 13px;
+}
+
+.socials-site-item:nth-child(3) {
+  display: flex;
+  align-self: center;
+}
+
+.footer-socials-youtube {
+  display: flex;
 }
 
 .socials-phone-list {
-  padding-top: 45px;
-  padding-bottom: 35px;
   justify-content: center;
   width: 720px;
   margin: auto;
@@ -509,14 +519,27 @@ body {
 }
 
 .socials-sorce-list {
-  width: 156px;
-  padding-top: 48.5px;
-  padding-bottom: 36.8px;
-  text-align: left;
-  margin: 0 auto;
-  margin-right: 70px;
   list-style-type: none;
+  align-self: center;
 }
+
+.footer-socials-sorce svg {
+  display: block;
+}
+
+/*
+.socials-site-item a {
+  color: #68a2ca;
+}
+
+.socials-site-item a {
+  color: #68a2ca;
+}
+
+.socials-site-item a {
+  color: rgba(104, 162, 202, 0.3);
+}
+*/
 
 .visually-hidden {
   position: absolute;
