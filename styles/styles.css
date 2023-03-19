@@ -151,6 +151,19 @@ body {
   border-radius: 4px;
 }
 
+
+.navigation-button:active {
+  color: rgba(143, 136, 136, 0.3);
+}
+
+.navigation-button:hover {
+  background-color: #615048;
+}
+
+.navigation-button:focus {
+  background-color: #615048;
+}
+
 /*Основное содержимое сайта*/
 
 .page-container {
@@ -405,6 +418,18 @@ body {
   border-radius: 4px;
 }
 
+.appointment-button:active {
+  color: rgba(143, 136, 136, 0.3);
+}
+
+.appointment-button:hover {
+  background-color: #615048;
+}
+
+.appointment-button:focus {
+  background-color: #615048;
+}
+
 /*Подписочная*/
 .subscription {
   display: flex;
@@ -469,6 +494,19 @@ body {
   overflow: hidden;
 }
 
+.subscription-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscription-button:focus {
+  background-color: #68A2CA;
+}
+
+.subscription-button:active {
+  color: rgba(255, 255, 255, 1);
+}
+
+
 /*Элементы подвальчика*/
 
 .main-footer {
@@ -508,10 +546,28 @@ body {
   padding: 15px 13px;
 }
 
+.socials-icon {
+  color: #83B3D3;
+}
+
 .socials-site-item:nth-child(3) {
   display: flex;
   align-self: center;
 }
+
+
+.socials-site-item:hover .socials-icon {
+  color: #68a2ca;
+}
+
+.footer-socials-link:focus .socials-icon {
+  color: #68a2ca;
+}
+
+.socials-site-item:active .socials-icon {
+  color: rgba(104, 162, 202, 0.3);
+}
+
 
 .footer-socials-youtube {
   display: flex;
@@ -534,28 +590,39 @@ body {
   padding-right: 50px;
 }
 
+.socials-phone:hover {
+  color: #756157;
+}
+
+.socials-phone:focus {
+  color: #756157;
+}
+
+.socials-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .socials-sorce-list {
   list-style-type: none;
   align-self: center;
 }
 
-.footer-socials-sorce svg {
+.footer-socials-sorce .sorce-icon {
   display: block;
+  color: #000000;
 }
 
-/*
-.socials-site-item a {
-  color: #68a2ca;
+.footer-socials-sorce:hover .sorce-icon {
+  color: #756157;
 }
 
-.socials-site-item a {
-  color: #68a2ca;
+.footer-socials-sorce:focus .sorce-icon {
+  color: #756157;
 }
 
-.socials-site-item a {
-  color: rgba(104, 162, 202, 0.3);
+.footer-socials-sorce:active .sorce-icon {
+  color: rgba(117, 97, 87, 0.3);
 }
-*/
 
 .visually-hidden {
   position: absolute;
