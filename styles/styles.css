@@ -511,6 +511,7 @@ body {
 }
 
 .subscription-button {
+  font-family: inherit;
   padding: 8px 50px;
   width: 232px;
   font-weight: 700;
@@ -654,6 +655,11 @@ body {
 
 .footer-socials-sorce:active .sorce-icon {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .visually-hidden {
